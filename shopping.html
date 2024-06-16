@@ -26,6 +26,26 @@
         </div>
     </header>
 
+    <!-- Popup para ingresar detalles de tarjeta -->
+<div id="payment-popup" class="payment-popup">
+    <div class="popup-content">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <h2>Ingrese los detalles de su tarjeta</h2>
+        <form id="payment-form">
+            <label for="card-number">Número de tarjeta</label>
+            <input type="text" id="card-number" name="card-number" required>
+            
+            <label for="card-expiry">Fecha de vencimiento</label>
+            <input type="text" id="card-expiry" name="card-expiry" placeholder="MM/AA" required>
+            
+            <label for="card-cvc">CVC</label>
+            <input type="text" id="card-cvc" name="card-cvc" required>
+            
+            <button type="submit">Pagar</button>
+        </form>
+    </div>
+</div>
+
     <div class="mobile-menu" id="mobileMenu">
         <a href="#inicio">Inicio</a>
         <a href="#nuestra-historia">Nuestra Historia</a>
@@ -72,5 +92,30 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="shopping.js"></script>
+    <script>
+        // Función para abrir el popup
+        function openPopup() {
+            document.getElementById('payment-popup').style.display = 'flex';
+        }
+    
+        // Función para cerrar el popup
+        function closePopup() {
+            document.getElementById('payment-popup').style.display = 'none';
+        }
+    
+        // Añade evento al botón de finalizar pedido
+        document.querySelector('.checkout').addEventListener('click', function(event) {
+            event.preventDefault(); // Evita la acción por defecto del botón
+            openPopup();
+        });
+    
+        // Manejo del formulario de pago
+        document.getElementById('payment-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Pago realizado con éxito');
+            closePopup();
+        });
+    </script>
+    
 </body>
 </html>

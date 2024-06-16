@@ -855,3 +855,47 @@ footer p {
 .mobile-menu a:hover {
     color: #E71D2A; /* Color del texto cuando el mouse está sobre el enlace en el menú móvil */
 }
+
+/* Agrega esto a tu archivo CSS */
+
+.right a {
+    color: black; /* Color del texto cuando no está en estado hover */
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.right a:hover {
+    color: #E71D2A; /* Color del texto cuando el mouse está sobre el enlace */
+}
+
+.mobile-menu a {
+    color: white; /* Color del texto cuando no está en estado hover en el menú móvil */
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+.mobile-menu a:hover {
+    color: #E71D2A; /* Color del texto cuando el mouse está sobre el enlace en el menú móvil */
+}
+
+
+#cart-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #E71D2A;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    z-index: 1000;
+}
+
+#cart-float ion-icon {
+    color: white;
+    font-size: 24px;
+}

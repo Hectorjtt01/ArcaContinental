@@ -108,6 +108,9 @@
                         </div>
                     </div>
                 </div>
+                <div id="cart-float" onclick="redirectToCart()">
+                  <ion-icon name="cart"></ion-icon>
+              </div>
             </section>
 
             <!-- ======================= "Testimonios" SECTION ================== -->
@@ -246,5 +249,10 @@
   <script>
     AOS.init();
   </script>
+  <script>
+    function redirectToCart() {
+        window.location.href = 'shopping.html'; // Reemplaza 'cart.html' con la URL de tu página del carrito
+    }
+</script>
 </body>
 </html>

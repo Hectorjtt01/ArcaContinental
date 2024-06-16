@@ -261,18 +261,18 @@
     <script>
       // scripts/carousel.js
 
-let currentIndex = 0;
-const images = document.querySelectorAll('.carousel-images img');
-const totalImages = images.length;
+      let currentIndex = 0;
+      const images = document.querySelectorAll('.carousel-images img');
+      const totalImages = images.length;
 
-function showNextImage() {
-    images[currentIndex].style.opacity = 0;
-    currentIndex = (currentIndex + 1) % totalImages;
-    images[currentIndex].style.opacity = 1;
-}
+      function showNextImage() {
+          images.forEach((img, index) => {
+              img.style.opacity = index === currentIndex ? '1' : '0';
+          });
+          currentIndex = (currentIndex + 1) % totalImages;
+      }
 
-setInterval(showNextImage, 1000); // Cambia la imagen cada 6 segundos
-
+      setInterval(showNextImage, 2000); // Cambia la imagen cada 3 segundos
     </script>
 </body>
 </html>
