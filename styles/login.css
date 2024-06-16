@@ -224,7 +224,7 @@ body{
     z-index: 1000;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    animation: fadeOut 2s 2s forwards; /* Desaparece despuÃ©s de 2 segundos */
+    animation: fadeOut 2s 2s forwards; /* Desaparece después de 2 segundos */
 }
 
 .error-message {
@@ -238,7 +238,7 @@ body{
     z-index: 1000;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    animation: fadeOut 2s 2s forwards; /* Desaparece despuÃ©s de 2 segundos */
+    animation: fadeOut 2s 2s forwards; /* Desaparece después de 2 segundos */
 }
 
 @keyframes fadeOut {
@@ -248,28 +248,22 @@ body{
     }
 }
 
-/* Estilo para el Ã­cono de mostrar/ocultar contraseÃ±a */
+/* Estilo para el ícono de mostrar/ocultar contraseña */
 .toggle-password {
     cursor: pointer;
     position: absolute;
     right: 55px;
     top: 59%;
     transform: translateY(-50%);
-  }
-  
-  /* AsegÃºrate de ajustar el padding del input para hacer espacio para el Ã­cono */
-  input[type="password"] {
-    padding-right: 40px; /* Ajustar segÃºn sea necesario */
-  }
+}
+
+/* Asegúrate de ajustar el padding del input para hacer espacio para el ícono */
+input[type="password"] {
+    padding-right: 40px; /* Ajustar según sea necesario */
+}
 
 /* Estilo para el logo */
 .arca-header .arca-logo {
-    height: 200px; /* Ajustar el tamaÃ±o del logo */
+    height: 200px; /* Ajustar el tamaño del logo */
     margin-left: 10px; /* Espaciado a la izquierda */
-}
-
-/* Estilo para el logo en el formulario */
-.amazon-logo {
-    height: 200px; /* Ajusta este valor segÃºn el tamaÃ±o deseado */
-    margin-bottom: px; /* AÃ±adir espacio debajo de la imagen si es necesario */
 }
