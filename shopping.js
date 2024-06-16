@@ -68,3 +68,4 @@ function updateCartTotals() {
     document.getElementById('cart-shipping').textContent = shipping.toFixed(2);
     document.getElementById('cart-total').textContent = total.toFixed(2);
 }
+
