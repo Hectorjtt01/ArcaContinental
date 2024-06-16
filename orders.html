@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Orders</title>
+
+    <!-- This code is needed for responsive design to work.
+      (Responsive design = make the website look good on
+      smaller screen sizes like a phone or a tablet). -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Load a font called Roboto from Google Fonts. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Here are the CSS files for this page. -->
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/orders.css">
+    <link rel="stylesheet" href="styles/arca-continental.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+          <div class="left">
+              <a href="#"><img src="img/logos/arcalogo-removebg-preview.png" alt=""></a>
+          </div>
+          <div class="right">
+              <nav class="desktop-menu">
+                  <a href="main.html">Inicio</a>
+                  <a href="productos.html">Tienda</a>
+                  <a href="promociones.html">Promociones</a>
+                  <a href="orders.html">Pedidos</a>
+                  <a href="intereses.html">Mi cuenta</a>
+                  <a href="login.html" class="loginBtn">Iniciar Sesión</a>
+              </nav>
+              <div class="hamburger-menu">
+                  <ion-icon name="menu" onclick="toggleMenu()"></ion-icon>
+              </div>
+          </div>
+      </header>
+      <div class="mobile-menu" id="mobileMenu">
+          <a href="#inicio">Inicio</a>
+          <a href="#nuestra-historia">Nuestra Historia</a>
+          <a href="productos.html">Tienda</a>
+          <a href="promociones.html">Promociones</a>
+          <a href="contacto.html">Contacto</a>
+      </div>
+
+
+    <div class="main">
+      <div class="page-title">En camino</div>
+
+      <div class="orders-grid">
+        <div class="order-container">
+          
+          <div class="order-header">
+            <div class="order-header-left-section">
+              <div class="order-date">
+                <div class="order-header-label">Orden del:</div>
+                <div>Agosto 12</div>
+              </div>
+              <div class="order-total">
+                <div class="order-header-label">Total:</div>
+                <div>$35.06</div>
+              </div>
+            </div>
+
+            <div class="order-header-right-section">
+              <div class="order-header-label">Order ID:</div>
+              <div>27cba69d-4c3d-4098-b42d-ac7fa62b7664</div>
+            </div>
+          </div>
+
+          <div class="order-details-grid">
+            <div class="product-image-container">
+              <img src="img/productos/coca-cola.png.webp">
+            </div>
+
+            <div class="product-details">
+              <div class="product-name">
+                Coca Cola
+              </div>
+              <div class="product-delivery-date">
+                Llegando el 15 de Junio
+              </div>
+              <div class="product-quantity">
+                Cantidad: 1
+              </div>
+              <button class="buy-again-button button-primary">
+                <img class="buy-again-icon" src="img/icons/buy-again.png">
+                <span class="buy-again-message">Compre otra vez</span>
+              </button>
+            </div>
+
+            <div class="product-actions">
+              <a href="tracking.html">
+                <button class="track-package-button button-secondary">
+                  Rastrear pedido
+                </button>
+              </a>
+            </div>
+
+            <div class="product-image-container">
+              <img src="img/productos/Fanta.webp">
+            </div>
+
+            <div class="product-details">
+              <div class="product-name">
+                Fanta
+              </div>
+              <div class="product-delivery-date">
+                Llegando el 19 de Junio 
+              </div>
+              <div class="product-quantity">
+                Cantidad: 2
+              </div>
+              <button class="buy-again-button button-primary">
+                <img class="buy-again-icon" src="img/icons/buy-again.png">
+                <span class="buy-again-message">Comprar otra vez</span>
+              </button>
+            </div>
+
+            <div class="product-actions">
+              <a href="tracking.html">
+                <button class="track-package-button button-secondary">
+                  Rastrear pedido
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="order-container">
+          <div class="page-title">Entregadas</div>
+          <div class="order-header">
+            <div class="order-header-left-section">
+              <div class="order-date">
+                <div class="order-header-label">Orden del:</div>
+                <div>10 Junio</div>
+              </div>
+              <div class="order-total">
+                <div class="order-header-label">Total:</div>
+                <div>$41.90</div>
+              </div>
+            </div>
+
+            <div class="order-header-right-section">
+              <div class="order-header-label">Order ID:</div>
+              <div>b6b6c212-d30e-4d4a-805d-90b52ce6b37d</div>
+            </div>
+          </div>
+
+          <div class="order-details-grid">
+            <div class="product-image-container">
+              <img src="img/productos/cieljamainca.png">
+            </div>
+
+            <div class="product-details">
+              <div class="product-name">
+                Ciel Jamaica
+              </div>
+              <div class="product-delivery-date">
+                Llego el 17 mayo
+              </div>
+              <div class="product-quantity">
+                Cantidad: 2
+              </div>
+              <button class="buy-again-button button-primary">
+                <img class="buy-again-icon" src="img/icons/buy-again.png">
+                <span class="buy-again-message">Comprar otra vez</span>
+              </button>
+            </div>
+
+            <div class="product-actions">
+              <a href="tracking.html">
+                <button class="track-package-button button-secondary">
+                  Rastrear pedido
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

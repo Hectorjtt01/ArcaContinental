@@ -1,0 +1,179 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+header {
+    height: 69px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: white; /* Asegúrate de que el header tenga un fondo visible */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0; /* Asegúrate de que el header esté alineado a la izquierda */
+    width: 100%;
+    z-index: 1000;
+}
+
+header a {
+    font-size: 16px;
+}
+
+header img {
+    margin: 10px;
+    height: 100px; /* Ajusta la altura de la imagen si es necesario */
+}
+
+header .right {
+    display: flex;
+    align-items: center;
+}
+
+.right {
+    margin-right: 50px;
+}
+
+.right a {
+    color: #333; /* Color del texto en el menú */
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.right a:hover {
+    color: #E71D2A;
+    text-decoration: none;
+}
+
+.right ion-icon {
+    color: #333 !important;
+    font-size: 18px;
+}
+
+.right ion-icon:hover {
+    color: #E71D2A !important;
+}
+
+.loginBtn {
+    background-color: #E71D2A;
+    border-radius: 34px;
+    padding: 10px 20px; 
+    color: white !important; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    text-align: center; 
+}
+
+.loginBtn:hover {
+    background-color: white;
+    color: #333 !important;
+    text-decoration: none;
+}
+
+.promotions-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 100px 20px 20px 20px;
+}
+
+.promotion-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    height: 450px; /* Increased height */
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease; /* Transition for background color */
+}
+
+.primer {
+    background-image: url(/img/productos/1.svg); 
+}
+
+.segundo {
+    background-image: url(/img/productos/2.svg); 
+}
+
+.tercero {
+    background-image: url(/img/productos/3.svg); 
+}
+
+.promotion-card h3 {
+    margin: 10px 0;
+    color: white;
+    font-size: 24px;
+}
+
+.promotion-card p {
+    margin: 5px 0;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.promotion-card h4 {
+    margin: 20px 0;
+    color: white;
+    font-size: 18px;
+}
+
+.promotion-details {
+    background: white;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: auto;
+    align-self: center;
+    width: 100%; /* Ensuring it takes the full width of the card */
+}
+
+.promotion-details p {
+    color: black;
+}
+
+.promotion-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none; /* Initially hidden */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.8); /* Dark overlay */
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.promotion-hover ion-icon {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.promotion-card:hover {
+    background: rgba(0, 0, 0, 0.8); /* Dark background on hover */
+}
+
+.promotion-card:hover .promotion-hover {
+    display: flex;
+}
+
+.promotion-card:hover h3,
+.promotion-card:hover p,
+.promotion-card:hover h4,
+.promotion-card:hover .promotion-details {
+    display: none; /* Hide original content on hover */
+}

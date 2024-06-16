@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tracking</title>
+
+    <!-- This code is needed for responsive design to work.
+      (Responsive design = make the website look good on
+      smaller screen sizes like a phone or a tablet). -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Load a font called Roboto from Google Fonts. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Here are the CSS files for this page. -->
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/arca-continental.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/tracking.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+          <div class="left">
+              <a href="#"><img src="img/logos/arcalogo-removebg-preview.png" alt=""></a>
+          </div>
+          <div class="right">
+              <nav class="desktop-menu">
+                  <a href="main.html">Inicio</a>
+                  <a href="productos.html">Tienda</a>
+                  <a href="promociones.html">Promociones</a>
+                  <a href="orders.html">Pedidos</a>
+                  <a href="intereses.html">Mi cuenta</a>
+                  <a href="login.html" class="loginBtn">Iniciar Sesión</a>
+              </nav>
+              <div class="hamburger-menu">
+                  <ion-icon name="menu" onclick="toggleMenu()"></ion-icon>
+              </div>
+          </div>
+      </header>
+      <div class="mobile-menu" id="mobileMenu">
+          <a href="#inicio">Inicio</a>
+          <a href="#nuestra-historia">Nuestra Historia</a>
+          <a href="productos.html">Tienda</a>
+          <a href="promociones.html">Promociones</a>
+          <a href="contacto.html">Contacto</a>
+      </div>
+
+
+    
+
+    <div class="main">
+      <div class="order-tracking">
+        <a class="back-to-orders-link link-primary" href="orders.html">
+          Tus ordenes
+        </a>
+
+        <div class="delivery-date">
+          Entrega aproximada, 18 Jun
+        </div>
+
+        <div class="product-info">
+          Paquete de Coca Cola
+        </div>
+
+        <div class="product-info">
+          Cantidad: 1
+        </div>
+
+        <img class="product-image" src="img/productos/coca-cola.png.webp">
+
+        <div class="progress-labels-container">
+          <div class="progress-label">
+            Preparando
+          </div>
+          <div class="progress-label current-status">
+            En camino
+          </div>
+          <div class="progress-label">
+            Entregado
+          </div>
+        </div>
+
+        <div class="progress-bar-container">
+          <div class="progress-bar"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
