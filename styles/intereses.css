@@ -5,8 +5,9 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
+    padding-top: 20px; /* Add padding to the top */
 }
 
 .container {

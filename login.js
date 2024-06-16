@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 signupMessage.style.display = 'block';
 
                 setTimeout(() => {
-                    window.location.href = 'main.html';  // Redirection after successful signup
+                    window.location.href = 'intereses.html';  // Redirection to interests page after successful signup
                 }, 2000);  // 2000 milliseconds = 2 seconds
 
             } catch (error) {
