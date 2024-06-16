@@ -19,7 +19,7 @@
                 <a href="promociones.html">Promociones</a>
                 <a href="orders.html">Pedidos</a>
                 <a href="intereses.html">Mi cuenta</a>
-                <a href="login.html" class="loginBtn">Iniciar Sesión</a>
+                <a href="login.html" class="loginBtn">Cerrar Sesión</a>
             </nav>
             <div class="hamburger-menu">
                 <ion-icon name="menu" onclick="toggleMenu()"></ion-icon>
@@ -35,6 +35,9 @@
                 <img src="img/power.jpeg" alt="Descuento 1">
                 <img src="img/coca.jpeg" alt="Descuento 3">
             </div>
+        </div>
+        <div id="cart-float" onclick="redirectToCart()">
+            <ion-icon name="cart"></ion-icon>
         </div>
     </section>
     
@@ -273,6 +276,18 @@
       }
 
       setInterval(showNextImage, 2000); // Cambia la imagen cada 3 segundos
+    </script>
+    <script>
+        var copy = document.querySelector(".logos-slide").cloneNode(true);
+        document.querySelector(".logos").appendChild(copy);
+      </script>
+      <script>
+        AOS.init();
+      </script>
+      <script>
+        function redirectToCart() {
+            window.location.href = 'shopping.html'; // Reemplaza 'cart.html' con la URL de tu página del carrito
+        }
     </script>
 </body>
 </html>

@@ -54,8 +54,42 @@
                 
             </div>
         </div>
+        <div class="promotion-card cuarto">
+            <div class="promotion-details">
+                
+                <p>Expira: 31-12-2024</p>
+            </div>
+            <div class="promotion-hover">
+                <ion-icon name="cart"></ion-icon>
+                
+            </div>
+        </div>
+        <div class="promotion-card quinto">
+            <div class="promotion-details">
+                
+                <p>Expira: 31-12-2024</p>
+            </div>
+            <div class="promotion-hover">
+                <ion-icon name="cart"></ion-icon>
+                
+            </div>
+        </div>
 
-
+        <div id="cart-float" onclick="redirectToCart()">
+            <ion-icon name="cart"></ion-icon>
+        </div>
     </section>
+    <script>
+        var copy = document.querySelector(".logos-slide").cloneNode(true);
+        document.querySelector(".logos").appendChild(copy);
+      </script>
+      <script>
+        AOS.init();
+      </script>
+      <script>
+        function redirectToCart() {
+            window.location.href = 'shopping.html'; // Reemplaza 'cart.html' con la URL de tu página del carrito
+        }
+    </script>
 </body>
 </html>
